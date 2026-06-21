@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeritSync® — CareerOS™ for Laid-Off Tech & Marketing Pros</title>
+  <meta name="description" content="Get back to work faster. ATS-optimized resumes, LinkedIn strategy, interview coaching & emotional support. Free 15-min consultation.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Background Grids and Blurs -->
+  <div class="grid-texture"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <nav>
+      <a href="#/" class="logo">
+        <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 6h20l8 8v28a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" fill="none"></path>
+          <path d="M30 6v8h8" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"></path>
+          <path d="M15 19h12M15 25h8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M14 30l5 6 12-15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>MERITSYNC<sup>®</sup></span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#/solution" class="nav-link" data-route="solution">System</a>
+        <a href="#/services" class="nav-link" data-route="services">Services</a>
+        <a href="#/packages" class="nav-link" data-route="packages">Pricing</a>
+        <a href="#/success-stories" class="nav-link" data-route="success-stories">Success Stories</a>
+        <a href="#/ats-tool" class="nav-link" data-route="ats-tool">ATS Scanner</a>
+        <a href="#/faq" class="nav-link" data-route="faq">FAQ</a>
+        <a href="#/contact" class="nav-link" data-route="contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#/ats-tool" class="btn btn-glass sm-hide" style="padding: 10px 20px; font-size: 13px;">Scan Resume</a>
+        <a href="#/contact" class="btn btn-gold" style="padding: 10px 20px; font-size: 13px;">Book Session</a>
+        <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+          <span>☰</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerCloseBtn">✕</button>
+    <a href="#/" data-route="home">Home</a>
+    <a href="#/solution" data-route="solution">System</a>
+    <a href="#/services" data-route="services">Services</a>
+    <a href="#/packages" data-route="packages">Pricing</a>
+    <a href="#/success-stories" data-route="success-stories">Success Stories</a>
+    <a href="#/ats-tool" data-route="ats-tool">ATS Resume Scanner</a>
+    <a href="#/faq" data-route="faq">FAQ</a>
+    <a href="#/contact" data-route="contact">Contact</a>
+    <a href="#/ats-tool" class="btn btn-glass" style="margin-top: 24px;">Try ATS Scanner</a>
+    <a href="#/contact" class="btn btn-gold">Book Free Session</a>
+  </div>
+
+  <!-- Main Multi-Page Container -->
+  <main style="min-height: 100vh;">
+
+    <!-- ================= HOME PAGE ================= -->
+    <div id="page-home" class="page-view active">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="section-badge">
+              <span class="dot"></span>
+              CareerOS™ · For Tech & Marketing
+            </span>
+            <h1>You Got Laid Off.<br>Now <span class="font-display italic text-gradient-gold">Get Back Stronger.</span></h1>
+            <p class="lead">127,000 tech professionals laid off in 2025-26. Most apply to 500+ jobs and get 0 interviews. We fix that in 60 days — ATS résumé, LinkedIn strategy, interview coaching, and the emotional support to land a role that's right for you.</p>
+            <div class="hero-actions">
+              <a href="#/contact" class="btn btn-gold">Get Your Free 15-Min Consultation</a>
+              <a href="#/packages" class="btn btn-glass">See Packages & Pricing</a>
+            </div>
+            <div class="hero-bullets">
+              <span>★ 4.8/5 client satisfaction</span>
+              <span>• 47-day average to offer</span>
+              <span>• Coaches from Google · Amazon · Meta</span>
+            </div>
+          </div>
+          
+          <div class="hero-media">
+            <div class="hero-img-container">
+              <!-- Using SVG-based high-quality placeholder for premium vector look -->
+              <svg viewBox="0 0 800 600" width="100%" height="100%" style="background:#0c182d; display:block;" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#dfa54b;stop-opacity:0.2" />
+                    <stop offset="100%" style="stop-color:#081120;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)" />
+                <circle cx="400" cy="250" r="140" fill="#081120" stroke="#dfa54b" stroke-width="2" stroke-dasharray="10 5" opacity="0.3"/>
+                <g transform="translate(250, 120)">
+                  <rect width="300" height="260" rx="16" fill="rgba(8, 17, 32, 0.9)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+                  <rect x="25" y="30" width="250" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+                  <rect x="25" y="60" width="150" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+                  <rect x="25" y="80" width="200" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+                  
+                  <line x1="25" y1="120" x2="275" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                  
+                  <!-- ATS Badge -->
+                  <rect x="25" y="140" width="100" height="24" rx="12" fill="rgba(52, 211, 153, 0.15)" stroke="rgba(52, 211, 153, 0.3)" stroke-width="1"/>
+                  <text x="35" y="156" fill="#34d399" font-family="Inter, sans-serif" font-size="10" font-weight="700">✓ ATS OPTIMIZED</text>
+                  
+                  <!-- Salary growth -->
+                  <rect x="135" y="140" width="140" height="24" rx="12" fill="rgba(223, 165, 75, 0.15)" stroke="rgba(223, 165, 75, 0.3)" stroke-width="1"/>
+                  <text x="145" y="156" fill="#dfa54b" font-family="Inter, sans-serif" font-size="10" font-weight="700">✦ +145% SALARY</text>
+
+                  <rect x="25" y="185" width="250" height="35" rx="10" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                  <text x="40" y="207" fill="#f3f4f6" font-family="Manrope, sans-serif" font-size="12" font-weight="800">Verified Offer Received</text>
+                  <circle cx="255" cy="202" r="8" fill="#34d399"/>
+                  <path d="M252 202l2 2 4-4" stroke="#050c18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </g>
+                <text x="400" y="470" text-anchor="middle" fill="#dfa54b" font-family="Instrument Serif, serif" font-style="italic" font-size="28">Ready to bounce back?</text>
+                <text x="400" y="505" text-anchor="middle" fill="#9ca3af" font-family="Inter, sans-serif" font-size="14">MeritSync Platform Clone & ATS Analyzer Tool</text>
+              </svg>
+            </div>
+            
+            <div class="hero-timeline">
+              <div class="hero-timeline-header">
+                <span>Career Timeline</span>
+                <span style="color: var(--success);">● Active</span>
+              </div>
+              <div class="timeline-items">
+                <div class="timeline-row red">
+                  <span class="timeline-icon">✕</span>
+                  <span>Rejected Résumé (Old Format)</span>
+                </div>
+                <div class="timeline-row active">
+                  <span class="timeline-icon">✓</span>
+                  <span>ATS-Optimized Résumé (Week 2)</span>
+                </div>
+                <div class="timeline-row">
+                  <span class="timeline-icon">✓</span>
+                  <span>Interview Invitation (Week 4)</span>
+                </div>
+                <div class="timeline-row">
+                  <span class="timeline-icon">✓</span>
+                  <span>Offer Letter Secured (Week 7)</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="floating-badge">
+              <div class="text-gradient-gold val">+145%</div>
+              <div class="lbl">avg. salary growth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Bar -->
+      <section class="trust-bar">
+        <div class="container trust-content">
+          <div class="trust-item"><span class="star">✦</span> 50+ hired in last 90 days</div>
+          <div class="trust-item"><span class="star">✦</span> 47-day average to new role</div>
+          <div class="trust-item"><span class="star">✦</span> 4.8/5 satisfaction rate</div>
+          <div class="trust-item"><span class="star">✦</span> ICF-certified coaches</div>
+          <div class="trust-item"><span class="star">✦</span> Money-back guarantee</div>
+        </div>
+      </section>
+
+      <!-- The Reality / Problem Section -->
+      <section id="solution" class="scroll-mt">
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            The Reality
+          </span>
+          <h2 class="section-title">The USA job market is <span class="font-display italic text-gradient-gold">brutal</span> right now</h2>
+          <p class="section-subtitle">If you were just laid off — or you've searched for months with nothing to show — here's the honest reason the job search is so hard in 2026.</p>
+          
+          <div class="problem-grid">
+            <div class="glass-card problem-card hover-lift">
+              <div class="problem-meta">
+                <span class="problem-num font-display">01</span>
+                <div class="problem-stat">
+                  <div class="text-gradient-gold problem-stat-val">75%</div>
+                  <div class="problem-stat-lbl">Rejected by ATS</div>
+                </div>
+              </div>
+              <h3>Your Résumé Never Gets Seen by Humans</h3>
+              <p>75% of résumés are rejected by Applicant Tracking Systems before a human recruiter reads them. One fancy template or misplaced section and you're auto-rejected — even if you're perfectly qualified.</p>
+            </div>
+
+            <div class="glass-card problem-card hover-lift">
+              <div class="problem-meta">
+                <span class="problem-num font-display">02</span>
+                <div class="problem-stat">
+                  <div class="text-gradient-gold problem-stat-val">500:1</div>
+                  <div class="problem-stat-lbl">Apps per Interview</div>
+                </div>
+              </div>
+              <h3>500+ Applications = 0 Interviews</h3>
+              <p>You apply. Nothing happens. You apply again. Still nothing. Your materials aren't optimized, your LinkedIn profile isn't discoverable, and your outreach templates are generic.</p>
+            </div>
+
+            <div class="glass-card problem-card hover-lift">
+              <div class="problem-meta">
+                <span class="problem-num font-display">03</span>
+                <div class="problem-stat">
+                  <div class="text-gradient-gold problem-stat-val">6–8</div>
+                  <div class="problem-stat-lbl">Rounds Minimum</div>
+                </div>
+              </div>
+              <h3>6–8 Interview Rounds (And You're Not Ready)</h3>
+              <p>Phone screen → take home test → technical assessment → behavioral panel → manager sync → executive round. You could interview for weeks, and rustiness costs you the offer at round 2 or 3.</p>
+            </div>
+
+            <div class="glass-card problem-card hover-lift">
+              <div class="problem-meta">
+                <span class="problem-num font-display">04</span>
+                <div class="problem-stat">
+                  <div class="text-gradient-gold problem-stat-val">60%</div>
+                  <div class="problem-stat-lbl">Anxiety / Burnout</div>
+                </div>
+              </div>
+              <h3>Layoff Trauma Is Real — Confidence Is Shot</h3>
+              <p>Being laid off isn't just lost income. It's replaying the HR call, the anxiety, the imposter syndrome. A better résumé won't help if you're paralyzed by self-doubt during high-stakes pitches.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Operating System Section -->
+      <section>
+        <div class="container">
+          <div class="timeline-section">
+            <div>
+              <span class="section-badge">
+                <span class="dot"></span>
+                The Operating System
+              </span>
+              <h2 class="section-title" style="margin-top: 16px;">One system. Five phases. <br><span class="font-display italic text-gradient-gold">Bounce Back Stronger.</span></h2>
+              <p class="section-subtitle" style="margin-top: 20px;">We partner with you step-by-step to rebuild your materials, optimize your inbound pipeline, master technical and behavioral interviews, and negotiate the highest package possible.</p>
+              
+              <div class="glass-card" style="margin-top: 32px; border-color: rgba(223, 165, 75, 0.25);">
+                <h4 style="color: var(--text-ivory); margin-bottom: 8px;">Want to scan your compatibility first?</h4>
+                <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px;">Use our interactive ATS Resume Scanner to analyze your resume against any job description instantly before booking.</p>
+                <a href="#/ats-tool" class="btn btn-gold" style="width: 100%;">Launch Free ATS Scanner</a>
+              </div>
+            </div>
+            
+            <div class="timeline-connector">
+              <div class="timeline-step">
+                <span class="step-number">1</span>
+                <div class="glass-card hover-lift">
+                  <span class="step-days">Days 1–10</span>
+                  <h3>Résumé Reset</h3>
+                  <p>We rebuild your résumé for ATS — keyword optimization, achievement quantification, US 1-page format. It gets past the automated filter and onto a human recruiter's desk.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-number">2</span>
+                <div class="glass-card hover-lift">
+                  <span class="step-days">Days 5–15</span>
+                  <h3>LinkedIn Magnetism</h3>
+                  <p>70% of recruiters source directly on LinkedIn. We rewrite your headline, About summary, and experience sections so recruiters find you — inbound opportunities, not outbound rejection.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-number">3</span>
+                <div class="glass-card hover-lift">
+                  <span class="step-days">Days 10–45</span>
+                  <h3>Interview Mastery</h3>
+                  <p>STAR frameworks, technical prep, salary negotiation playbooks, and recorded mock interviews. You walk in confident and differentiate yourself from competitors.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-number">4</span>
+                <div class="glass-card hover-lift">
+                  <span class="step-days">Days 15–60</span>
+                  <h3>Hidden Job Market</h3>
+                  <p>70% of jobs are never posted online. We map target companies, key recruiters, and decision-makers, providing proven cold-outreach and referral playbooks.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-number">5</span>
+                <div class="glass-card hover-lift">
+                  <span class="step-days">Ongoing Support</span>
+                  <h3>Confidence + Clarity</h3>
+                  <p>Process the layoff, rebuild confidence, and get clarity on what you actually want next — so you move with conviction and negotiation power, not anxiety.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Counters -->
+      <section class="counter-section">
+        <div class="container counter-grid">
+          <div class="counter-box">
+            <div class="counter-val" data-target="500">0</div>
+            <div class="counter-lbl">Professionals Helped</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-val" data-target="250">0</div>
+            <div class="counter-lbl">Jobs Landed in 90 Days</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-val" data-target="47">0</div>
+            <div class="counter-lbl">Avg. Days to Offer</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-val" data-target="145">0</div>
+            <div class="counter-lbl">Avg. Salary Growth (%)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="scroll-mt">
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            What You Get
+          </span>
+          <h2 class="section-title">A complete career <span class="font-display italic text-gradient-gold">transformation engine</span></h2>
+          <p class="section-subtitle">We don't just edit documents. We provide an end-to-end operational framework to secure and negotiate your next leadership or technical role.</p>
+          
+          <div class="services-grid">
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>ATS-Friendly Résumé</h3>
+              <p>Keyword research, achievement quantification, and the US format that gets past automated filters directly to hiring managers.</p>
+            </div>
+            
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>LinkedIn Optimization</h3>
+              <p>Headline, About, and experience rewrites that make recruiters come to you. Boost discoverability for premium inbound pipelines.</p>
+            </div>
+
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>Interview Coaching</h3>
+              <p>STAR behavioral method, technical system design prep, and recorded mock interviews with video feedback from top tech coaches.</p>
+            </div>
+
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>Job Search Strategy</h3>
+              <p>Access the 70% hidden job market via mapped companies, outbound referral strategies, and recruiter relations.</p>
+            </div>
+
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>Salary Negotiation</h3>
+              <p>2026 market rates, scripts, and total-comp strategy. Our clients average an increase of $30K-$50K in final offers.</p>
+            </div>
+
+            <div class="glass-card service-card hover-lift">
+              <div class="service-icon">✦</div>
+              <h3>Emotional Counseling</h3>
+              <p>Process layoff trauma, combat imposter syndrome, and rebuild the executive confidence required for top-tier pitches.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="packages" class="scroll-mt">
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Pricing Plans
+          </span>
+          <h2 class="section-title">Choose your Bounce Back plan</h2>
+          <p class="section-subtitle">Most people choose Professional. Payment plans available. Money-back guarantee on every tier.</p>
+          
+          <div class="pricing-grid">
+            <!-- Starter -->
+            <div class="glass-card pricing-card hover-lift">
+              <h3>Starter</h3>
+              <p class="pricing-desc">Quick résumé fix</p>
+              <div class="pricing-price">$999</div>
+              <ul class="pricing-features">
+                <li><span>✓</span> ATS résumé (1 version)</li>
+                <li><span>✓</span> 2 revisions • Word + PDF</li>
+                <li><span>✓</span> Basic cover letter template</li>
+                <li><span>✓</span> 5-day turnaround</li>
+              </ul>
+              <a href="#/contact?plan=starter" class="btn btn-glass">Get Started</a>
+            </div>
+
+            <!-- Professional -->
+            <div class="glass-card pricing-card featured hover-lift">
+              <span class="pricing-badge">Most Popular</span>
+              <h3>Professional</h3>
+              <p class="pricing-desc">Mid-level (3–8 yrs)</p>
+              <div class="pricing-price">$1,799</div>
+              <ul class="pricing-features">
+                <li><span>✓</span> ATS résumé (3 versions)</li>
+                <li><span>✓</span> LinkedIn optimization</li>
+                <li><span>✓</span> 2 coaching calls (60 min)</li>
+                <li><span>✓</span> Interview + cold-email guides</li>
+                <li><span>✓</span> 30-day email support</li>
+              </ul>
+              <a href="#/contact?plan=professional" class="btn btn-gold">Get Started</a>
+            </div>
+
+            <!-- Premium -->
+            <div class="glass-card pricing-card hover-lift">
+              <h3>Premium</h3>
+              <p class="pricing-desc">Senior (8–15 yrs)</p>
+              <div class="pricing-price">$2,499</div>
+              <ul class="pricing-features">
+                <li><span>✓</span> Everything in Professional</li>
+                <li><span>✓</span> 7 résumé versions • 10 revisions</li>
+                <li><span>✓</span> 4 coaching calls + mock</li>
+                <li><span>✓</span> Advanced LinkedIn + negotiation</li>
+                <li><span>✓</span> 60-day email + Slack support</li>
+              </ul>
+              <a href="#/contact?plan=premium" class="btn btn-glass">Get Started</a>
+            </div>
+
+            <!-- Layoff Comeback -->
+            <div class="glass-card pricing-card hover-lift">
+              <span class="pricing-badge green">Launch Offer</span>
+              <h3>Layoff Comeback</h3>
+              <p class="pricing-desc">Just laid off</p>
+              <div class="pricing-price">$1,199 <span class="strike">$1,499</span></div>
+              <ul class="pricing-features">
+                <li><span>✓</span> ATS résumé + cover letter</li>
+                <li><span>✓</span> Basic LinkedIn optimization</li>
+                <li><span>✓</span> 3 coaching calls (incl. counseling)</li>
+                <li><span>✓</span> 30-day support • 7-day turnaround</li>
+              </ul>
+              <a href="#/contact?plan=comeback" class="btn btn-glass">Claim Offer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Success stories grid -->
+      <section id="testimonials" class="scroll-mt">
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Real Results
+          </span>
+          <h2 class="section-title">Real results from <span class="font-display italic text-gradient-gold">real people</span></h2>
+          <p class="section-subtitle">Read how tech and marketing professionals bounced back from redundancy to secure premium offers.</p>
+          
+          <div class="reviews-masonry">
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"I was scared I'd never work again. This program gave me confidence, a strategy, and a job. 6 interviews in 3 weeks, offer in 50 days at $145K."</p>
+              <div class="review-author">
+                <svg width="44" height="44" viewBox="0 0 100 100" class="review-avatar" style="background:#0c182d;">
+                  <circle cx="50" cy="50" r="50" fill="#dfa54b" opacity="0.2"/>
+                  <text x="50" y="58" font-size="28" font-weight="bold" fill="#dfa54b" text-anchor="middle">SM</text>
+                </svg>
+                <div class="review-author-info">
+                  <span class="name">Sarah M.</span>
+                  <span class="title">Senior Backend Engineer • Seattle</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"After 12 years at Google the market felt completely different. The program paid for itself in the first salary negotiation — offer at $280K in 75 days."</p>
+              <div class="review-author">
+                <svg width="44" height="44" viewBox="0 0 100 100" class="review-avatar" style="background:#0c182d;">
+                  <circle cx="50" cy="50" r="50" fill="#dfa54b" opacity="0.2"/>
+                  <text x="50" y="58" font-size="28" font-weight="bold" fill="#dfa54b" text-anchor="middle">MK</text>
+                </svg>
+                <div class="review-author-info">
+                  <span class="name">Michael K.</span>
+                  <span class="title">Staff Engineer • Mountain View</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Literally laid off on Monday, started my job search with them on Wednesday. 3 interviews by week 2, offer by week 8. This was the push I needed."</p>
+              <div class="review-author">
+                <svg width="44" height="44" viewBox="0 0 100 100" class="review-avatar" style="background:#0c182d;">
+                  <circle cx="50" cy="50" r="50" fill="#dfa54b" opacity="0.2"/>
+                  <text x="50" y="58" font-size="28" font-weight="bold" fill="#dfa54b" text-anchor="middle">JT</text>
+                </svg>
+                <div class="review-author-info">
+                  <span class="name">James T.</span>
+                  <span class="title">Backend Engineer • Austin</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"They translated my soft marketing skills into hard business impact metrics. From a simple task list to a business story — hired with a 30% raise."</p>
+              <div class="review-author">
+                <svg width="44" height="44" viewBox="0 0 100 100" class="review-avatar" style="background:#0c182d;">
+                  <circle cx="50" cy="50" r="50" fill="#dfa54b" opacity="0.2"/>
+                  <text x="50" y="58" font-size="28" font-weight="bold" fill="#dfa54b" text-anchor="middle">JR</text>
+                </svg>
+                <div class="review-author-info">
+                  <span class="name">Jessica R.</span>
+                  <span class="title">Digital Marketing Manager • NY</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Career transitions are extremely hard. This made mine possible — hired AND negotiated a raise moving from tech to entertainment media."</p>
+              <div class="review-author">
+                <svg width="44" height="44" viewBox="0 0 100 100" class="review-avatar" style="background:#0c182d;">
+                  <circle cx="50" cy="50" r="50" fill="#dfa54b" opacity="0.2"/>
+                  <text x="50" y="58" font-size="28" font-weight="bold" fill="#dfa54b" text-anchor="middle">DL</text>
+                </svg>
+                <div class="review-author-info">
+                  <span class="name">David L.</span>
+                  <span class="title">Product Manager • Los Angeles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 32px;">
+            <a href="#/success-stories" class="btn btn-glass">See All Success Stories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coaches Section -->
+      <section id="coaches" class="scroll-mt">
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            The Team
+          </span>
+          <h2 class="section-title">Coaches who've <span class="font-display italic text-gradient-gold">lived it</span></h2>
+          <p class="section-subtitle">Our team consists of industry veterans and career psychologists who understand both the market strategy and the emotional load of transition.</p>
+          
+          <div class="coaches-grid">
+            <div class="glass-card coach-card hover-lift">
+              <svg width="80" height="80" viewBox="0 0 100 100" class="coach-avatar" style="background:#0c182d;">
+                <rect width="100%" height="100%" fill="url(#grad1)"/>
+                <text x="50" y="60" font-size="36" fill="#dfa54b" font-weight="bold" text-anchor="middle">JD</text>
+              </svg>
+              <h3>John Davis</h3>
+              <p class="coach-role">Lead Career Coach • Tech</p>
+              <p class="coach-bio">15 years at Google, Amazon & Meta. Hired 100+ engineers. ICF-certified.</p>
+              <p class="coach-quote">"You're not broken. The market is just brutal right now. Let's make it less brutal."</p>
+            </div>
+
+            <div class="glass-card coach-card hover-lift">
+              <svg width="80" height="80" viewBox="0 0 100 100" class="coach-avatar" style="background:#0c182d;">
+                <rect width="100%" height="100%" fill="url(#grad1)"/>
+                <text x="50" y="60" font-size="36" fill="#dfa54b" font-weight="bold" text-anchor="middle">RK</text>
+              </svg>
+              <h3>Rachel Kim</h3>
+              <p class="coach-role">Career Coach • Marketing</p>
+              <p class="coach-bio">10 years at Airbnb, HubSpot & startups. Certified Brand Strategist.</p>
+              <p class="coach-quote">"Your marketing skills are incredibly valuable. Let's prove it with hard business numbers."</p>
+            </div>
+
+            <div class="glass-card coach-card hover-lift">
+              <svg width="80" height="80" viewBox="0 0 100 100" class="coach-avatar" style="background:#0c182d;">
+                <rect width="100%" height="100%" fill="url(#grad1)"/>
+                <text x="50" y="60" font-size="36" fill="#dfa54b" font-weight="bold" text-anchor="middle">SP</text>
+              </svg>
+              <h3>Dr. Sophia Patel</h3>
+              <p class="coach-role">Resilience Coach • Counselor</p>
+              <p class="coach-bio">Ph.D. Organizational Psychology. 8 years counseling career transitions.</p>
+              <p class="coach-quote">"Your mental health is not separate from your job search. We nurture both."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="scroll-mt">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-badge">
+              <span class="dot"></span>
+              Questions
+            </span>
+            <h2 class="section-title">We've got answers</h2>
+          </div>
+          
+          <div class="faq-container">
+            <div class="faq-item glass-card">
+              <button class="faq-header">
+                <span>How long until I get results? Can I get a job in 60 days?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-content">
+                <p>Realistically, expect 60–90 days to receive a premium offer: résumé + LinkedIn rewrite (weeks 1–2), active outbound search and inbound funneling (weeks 2–4), technical and behavioral prep (weeks 3–8), and salary negotiation (weeks 8–12). Some clients land in under 30 days; we set a realistic strategy in your consult.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass-card">
+              <button class="faq-header">
+                <span>Do you offer refunds if I don't get hired?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-content">
+                <p>Yes. Complete the coaching modules in good faith and if you don't secure at least 3 interviews within 60 days, we refund 100% of your payment. We guarantee high-quality operational execution and market-tested strategies.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass-card">
+              <button class="faq-header">
+                <span>Do you handle visa sponsorship concerns?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-content">
+                <p>We help you target specific companies that are historically OPT/H1-B friendly and design custom positioning strategy. If you currently lack US work authorization entirely, we recommend seeking immigration legal counsel before commencing programmatic job searches.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass-card">
+              <button class="faq-header">
+                <span>Is the US résumé format different from international ones?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-content">
+                <p>Dramatically. US resumes are strict 1-page formats (unless 15+ years experience), heavily ATS-optimized, and focus exclusively on business impact metrics rather than long lists of general responsibilities. We rebuild your resume completely to match these standards.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass-card">
+              <button class="faq-header">
+                <span>Do I get one dedicated coach or several?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-content">
+                <p>You are assigned one primary career coach who coordinates your entire journey (resume, LinkedIn, interview strategy). You will also have scheduled syncs with our resilience coach for mental transition support, and specialized interview mock sessions with guest recruiters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Consultation Section -->
+      <section class="consultation-banner">
+        <div class="container">
+          <div class="consultation-card">
+            <h2>Ready to bounce back?</h2>
+            <p>No pressure, no hard sales pitch. We listen to your situation, assess your resume compatibility, and recommend the best roadmap forward. Join 500+ tech leaders who landed their next role.</p>
+            <div class="consultation-actions">
+              <a href="#/contact" class="btn btn-gold">Book Your Free Strategy Session</a>
+              <a href="#/packages" class="btn btn-glass">View Packages</a>
+            </div>
+            <div class="consultation-footer">
+              Or email us directly at <a href="mailto:resume@gethiredglobal.com">resume@gethiredglobal.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ================= SUCCESS STORIES PAGE ================= -->
+    <div id="page-success-stories" class="page-view">
+      <section style="padding-top: 130px; padding-bottom: 60px;">
+        <div class="container" style="text-align: center;">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Client Success • Trust Center
+          </span>
+          <h1 class="section-title" style="margin-top: 20px;">Real Career Transformations.<br><span class="text-gradient-gold">Real Results.</span></h1>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Helping ambitious professionals secure interviews, promotions, leadership roles, and career breakthroughs across the United States.</p>
+          
+          <div class="hero-actions" style="justify-content: center; margin-top: 32px;">
+            <a href="#/contact" class="btn btn-gold">Book Free Career Consultation</a>
+            <a href="#/ats-tool" class="btn btn-glass">Test Your Resume Compatibility</a>
+          </div>
+
+          <div class="outcome-tags">
+            <span class="outcome-tag">★★★★★ 4.8 Rating</span>
+            <span class="outcome-tag">74+ Reviews</span>
+            <span class="outcome-tag">47,000+ Profiles Checked</span>
+            <span class="outcome-tag">21+ Countries Served</span>
+            <span class="outcome-tag">Human-Written Resumes</span>
+            <span class="outcome-tag">ATS Optimized</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sliding Google Reviews Carousel Mock -->
+      <section style="padding: 24px 0; background: var(--bg-section-alt); border-y: 1px solid var(--border-glass);">
+        <div class="slider-container">
+          <div class="scroller-track">
+            <!-- Carousel item 1 -->
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Abhiman Niimain</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"The resume writeup was incredibly professional. Within 2 weeks of applying using the new ATS format, I received 3 callback invites. Truly recommend."</text>
+              </svg>
+            </div>
+            <!-- Carousel item 2 -->
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Piyush Chib</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"Highly structured process. The mock interview drills and the negotiation templates got me an additional $18K base salary. Program paid for itself."</text>
+              </svg>
+            </div>
+            <!-- Carousel item 3 -->
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Sambit Mohanty</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"I transitioned from engineering to a Technical Product Manager. They rewrote my entire experience to focus on metrics. Absolute game changer."</text>
+              </svg>
+            </div>
+            <!-- Carousel item 4 -->
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Sam Varghese</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"Being laid off from Meta was devastating. Sophia's resilience coaching helped me clear the head noise and John got me ready for system design."</text>
+              </svg>
+            </div>
+            <!-- Double elements for continuous scroller loop -->
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Abhiman Niimain</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"The resume writeup was incredibly professional. Within 2 weeks of applying using the new ATS format, I received 3 callback invites. Truly recommend."</text>
+              </svg>
+            </div>
+            <div class="scroller-card">
+              <svg viewBox="0 0 460 180" width="100%" height="100%" style="background:#ffffff; font-family:Inter,sans-serif;" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <text x="24" y="40" font-size="14" font-weight="700" fill="#1f2937">Piyush Chib</text>
+                <text x="24" y="58" font-size="11" fill="#dfa54b">★★★★★</text>
+                <text x="350" y="40" font-size="11" fill="#9ca3af" text-anchor="end">Verified Reviewer</text>
+                <text x="24" y="90" font-size="13" fill="#4b5563" width="410">"Highly structured process. The mock interview drills and the negotiation templates got me an additional $18K base salary. Program paid for itself."</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand outcomes -->
+      <section style="background: var(--bg-section-alt); padding: 64px 0; border-bottom: 1px solid var(--border-glass);">
+        <div class="container" style="text-align: center;">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Career Outcomes
+          </span>
+          <h2 class="section-title" style="font-size: 1.75rem; margin-top: 16px;">Professionals We've Supported Have Worked At</h2>
+          
+          <div class="brand-showcase-list">
+            <span class="brand-tag">Google</span>
+            <span class="brand-tag">Microsoft</span>
+            <span class="brand-tag">Amazon</span>
+            <span class="brand-tag">Apple</span>
+            <span class="brand-tag">Meta</span>
+            <span class="brand-tag">Netflix</span>
+            <span class="brand-tag">OpenAI</span>
+            <span class="brand-tag">Stripe</span>
+            <span class="brand-tag">Salesforce</span>
+            <span class="brand-tag">Adobe</span>
+            <span class="brand-tag">Tesla</span>
+            <span class="brand-tag">Airbnb</span>
+          </div>
+          <p style="font-size: 11px; color: var(--text-muted); margin-top: 24px; opacity: 0.6;">Logos and brand names represent organizations where our clients have successfully cleared interviews, negotiated offers, or secured employment.</p>
+        </div>
+      </section>
+
+      <!-- Recent Wins -->
+      <section>
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Recent Career Wins
+          </span>
+          <h2 class="section-title" style="margin-top: 16px;">Proven Outcomes Across Segments</h2>
+          
+          <div class="wins-grid">
+            <div class="glass-card win-card hover-lift">
+              <span class="win-badge">Role Transition</span>
+              <div class="win-transition">
+                <span>Product Manager</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="text-gradient-gold">Google</span>
+              </div>
+              <div class="win-tag">✦ +34% Salary Increase</div>
+            </div>
+
+            <div class="glass-card win-card hover-lift">
+              <span class="win-badge">Leadership Jump</span>
+              <div class="win-transition">
+                <span>Marketing Dir</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="text-gradient-gold">Salesforce</span>
+              </div>
+              <div class="win-tag">✦ Promotion to Director</div>
+            </div>
+
+            <div class="glass-card win-card hover-lift">
+              <span class="win-badge">New Offer</span>
+              <div class="win-transition">
+                <span>Software Eng</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="text-gradient-gold">Microsoft</span>
+              </div>
+              <div class="win-tag">✦ Offer within 6 weeks</div>
+            </div>
+
+            <div class="glass-card win-card hover-lift">
+              <span class="win-badge">Industry Relocation</span>
+              <div class="win-transition">
+                <span>Finance Manager</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="text-gradient-gold">JPMorgan</span>
+              </div>
+              <div class="win-tag">✦ +28% Total Compensation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Success Wall -->
+      <section style="background: var(--bg-section-alt);">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-badge">
+              <span class="dot"></span>
+              Client Success Wall
+            </span>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Hundreds of verified outcomes from engineering, marketing, and product leadership cohorts.</p>
+          </div>
+
+          <div class="reviews-masonry" style="margin-top: 48px;">
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"They translated my technical contributions into commercial impact. The ATS-friendly layout immediately increased callbacks."</p>
+              <div class="review-author">
+                <div class="review-author-info">
+                  <span class="name">Jason M.</span>
+                  <span class="title">Staff Engineer • Seattle</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"The salary negotiation advice paid for the package 10 times over. They coached me on scripts that got me sign-on bonuses."</p>
+              <div class="review-author">
+                <div class="review-author-info">
+                  <span class="name">Brian T.</span>
+                  <span class="title">Director of Infrastructure • Austin</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card review-item hover-lift">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">"Their LinkedIn SEO strategy turned on recruiters. I started receiving 2-3 inbound messages a week instead of applying constantly."</p>
+              <div class="review-author">
+                <div class="review-author-info">
+                  <span class="name">Amanda R.</span>
+                  <span class="title">Product Marketing Lead • SF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ================= ATS SCANNER PAGE ================= -->
+    <div id="page-ats-tool" class="page-view">
+      <section style="padding-top: 130px;">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 48px;">
+            <span class="section-badge">
+              <span class="dot"></span>
+              Interactive Tool
+            </span>
+            <h1 class="section-title" style="margin-top: 20px;">AI-Powered ATS Resume Scanner</h1>
+            <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Paste your resume and target job description below. Our parser evaluates keyword match rates, formatting red flags, and structural errors in real-time.</p>
+          </div>
+
+          <div class="ats-grid">
+            <!-- Workspace inputs -->
+            <div class="ats-workspace">
+              <div class="glass-card">
+                <h3 class="ats-panel-title">1. Inputs</h3>
+                <div class="contact-form" style="margin-top: 16px;">
+                  <div class="ats-input-box">
+                    <label>Paste Your Resume Text <span>(Include skills & experience)</span></label>
+                    <textarea class="ats-textarea" id="resumeTextInput" placeholder="John Doe&#10;Software Engineer&#10;EXPERIENCE:&#10;- Built web applications using React and Node.js...&#10;SKILLS: Javascript, HTML, CSS..."></textarea>
+                  </div>
+                  
+                  <div class="ats-input-box">
+                    <label>Paste Target Job Description <span>(To analyze matches)</span></label>
+                    <textarea class="ats-textarea" id="jobDescTextInput" placeholder="REQUIREMENTS:&#10;- 3+ years experience with React, TypeScript, and Node.js.&#10;- Knowledge of AWS, database design, and unit testing..."></textarea>
+                  </div>
+
+                  <button class="btn btn-gold" id="analyzeResumeBtn" style="padding: 16px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    Analyze Compatibility
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Score Dashboard Results -->
+            <div class="score-dashboard" id="atsResultsDashboard">
+              <div class="score-radial-container">
+                <div class="score-circle-wrapper">
+                  <svg class="score-svg" viewBox="0 0 160 160">
+                    <defs>
+                      <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#dfa54b"/>
+                        <stop offset="100%" stop-color="#f3d082"/>
+                      </linearGradient>
+                    </defs>
+                    <circle class="score-circle-bg" cx="80" cy="80" r="72" />
+                    <circle class="score-circle-fill" id="atsScoreFillCircle" cx="80" cy="80" r="72" />
+                  </svg>
+                  <div class="score-text-overlay">
+                    <div class="score-percentage" id="atsScorePercentText">0%</div>
+                    <div class="score-label">ATS Match</div>
+                  </div>
+                </div>
+                <div class="score-grade" id="atsGradeText">Please enter resume and job details to analyze.</div>
+              </div>
+
+              <!-- Metrics -->
+              <div class="score-metrics">
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Keyword Compatibility</span>
+                    <span id="keywordScorePercent">0%</span>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" id="keywordScoreFill" style="width: 0%;"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Formatting Audit</span>
+                    <span id="formattingScorePercent">0%</span>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" id="formattingScoreFill" style="width: 0%;"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Structure & Length Check</span>
+                    <span id="structureScorePercent">0%</span>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" id="structureScoreFill" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Details Section -->
+              <div class="score-details-section" id="atsDetailsSection">
+                <div class="details-block">
+                  <h4>Keywords Matching</h4>
+                  <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Identified keywords from job description that are present or missing in your resume.</p>
+                  <div class="keyword-tag-list" id="atsKeywordContainer">
+                    <!-- Dynamic keyword tags -->
+                  </div>
+                </div>
+
+                <div class="details-block">
+                  <h4>Audit Findings & Recommendations</h4>
+                  <ul class="details-list" id="atsAuditFindingsList">
+                    <!-- Dynamic findings -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <div id="page-contact" class="page-view">
+      <section style="padding-top: 130px;">
+        <div class="container contact-grid">
+          
+          <!-- Info Column -->
+          <div class="contact-info-panel" id="contact-form-section">
+            <span class="section-badge">
+              <span class="dot"></span>
+              Free Consultation
+            </span>
+            <h2 style="margin-top: 20px;">Book a Free Career <span class="font-display italic text-gradient-gold">Consultation</span></h2>
+            <p>Speak with one of our lead executive coaches to identify why your search has stalled. No pressure, no Sales pitches — just actionable, metrics-backed feedback on your resume compatibility, LinkedIn visibility, and target company sourcing.</p>
+            
+            <ul class="contact-bullet-list">
+              <li><span class="bullet-chk">✓</span> Define target roles & compensation goals</li>
+              <li><span class="bullet-chk">✓</span> Outline ATS compatibility weaknesses</li>
+              <li><span class="bullet-chk">✓</span> Assess LinkedIn inbound search keywords</li>
+              <li><span class="bullet-chk">✓</span> Review STAR format behavioral readiness</li>
+              <li><span class="bullet-chk">✓</span> Strategize target referral list mapping</li>
+            </ul>
+          </div>
+
+          <!-- Form Column -->
+          <div class="glass-card">
+            <h3 class="form-title">Send Us a Message</h3>
+            <p class="form-subtitle">Tell us about your background and we'll match you with the right advisor.</p>
+            
+            <form class="contact-form" id="bookingForm" novalidate>
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-field">
+                  <label for="emailAddr">Email Address</label>
+                  <input type="email" id="emailAddr" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="phoneNumber">Phone Number <span class="optional">(optional)</span></label>
+                  <input type="text" id="phoneNumber" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-field">
+                  <label for="linkedinUrl">LinkedIn Profile URL <span class="optional">(optional)</span></label>
+                  <input type="url" id="linkedinUrl" placeholder="linkedin.com/in/username">
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="jobTitle">Current / Target Job Title</label>
+                  <input type="text" id="jobTitle" placeholder="Senior Product Manager" required>
+                </div>
+                <div class="form-field">
+                  <label for="yoe">Years of Experience</label>
+                  <input type="text" id="yoe" placeholder="e.g., 8 years" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="serviceSelected">Service Required</label>
+                <select id="serviceSelected" required style="background: #0c182d;">
+                  <option value="" disabled selected>Select a career service...</option>
+                  <option value="Resume Writing">Professional Resume Writing</option>
+                  <option value="Executive Resume Writing">Executive Resume & Branding</option>
+                  <option value="LinkedIn Optimization">LinkedIn Profile SEO Optimization</option>
+                  <option value="Career Coaching">Career Sourcing & Sprints Coaching</option>
+                  <option value="Interview Prep">Behavioral / Tech Interview Mastery</option>
+                  <option value="ATS Review">ATS Verification audit</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="messageText">Your Message / Career Challenges</label>
+                <textarea id="messageText" rows="4" placeholder="Tell us about your current status, target comp, and the challenges you face in the current job search..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold">
+                Submit Consultation Request
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global Offices -->
+      <section>
+        <div class="container">
+          <span class="section-badge">
+            <span class="dot"></span>
+            Global footprint
+          </span>
+          <h2 class="section-title">Where to find us</h2>
+          
+          <div class="offices-grid">
+            <div class="glass-card office-card hover-lift">
+              <h3 style="color: var(--text-ivory);">Global Headquarters</h3>
+              <address>
+                <span>888 Quantum Loop, Suite 101</span>
+                <span>Palo Alto, California 94303</span>
+                <span>United States</span>
+              </address>
+              <p>Silicon Valley base managing C-suite career solutions, partnerships, product research, and administrative compliance.</p>
+            </div>
+
+            <div class="glass-card office-card hover-lift">
+              <h3 style="color: var(--text-ivory);">Bengaluru Office</h3>
+              <address>
+                <span>International Tech Park Bangalore (ITPB)</span>
+                <span>Block 1B, EPIP Zone, Whitefield</span>
+                <span>Bengaluru, Karnataka 560066, India</span>
+              </address>
+              <p>Supporting technology leaders, engineering managers, software developers, and systems architects across APAC.</p>
+            </div>
+
+            <div class="glass-card office-card hover-lift">
+              <h3 style="color: var(--text-ivory);">Odisha Office</h3>
+              <address>
+                <span>Srikhetra Bihar, Aiginia, Lane 4</span>
+                <span>Bhubaneswar, Odisha 751019</span>
+                <span>India</span>
+              </address>
+              <p>Directing backend systems audits, resume keyword database mapping, operations scaling, and customer support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info panel -->
+      <section style="background: var(--bg-section-alt); padding: 48px 0; border-top: 1px solid var(--border-glass);">
+        <div class="container info-cards-grid">
+          <div class="info-card">
+            <h4>Email Inquiry</h4>
+            <a href="mailto:resume@gethiredglobal.com">resume@gethiredglobal.com</a>
+          </div>
+
+          <div class="info-card">
+            <h4>Phone & WhatsApp</h4>
+            <a href="tel:+917735405034">+91 7735405034</a>
+          </div>
+
+          <div class="info-card">
+            <h4>Response Velocity</h4>
+            <p>Under 24 Hours</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Global Presence</h4>
+            <p>21+ Countries Served</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Booking Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">✓</div>
+      <h3>Consultation Requested!</h3>
+      <p>Thank you for submitting your career profile. Our team will review your details (and resume if you completed the ATS check) and reach out to schedule your free 15-minute consultation within 1 business day.</p>
+      <button class="btn btn-gold" id="modalCloseBtn">Done</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#/" class="logo">
+          <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 6h20l8 8v28a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" fill="none"></path>
+            <path d="M30 6v8h8" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"></path>
+            <path d="M15 19h12M15 25h8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"></path>
+            <path d="M14 30l5 6 12-15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span>MERITSYNC<sup>®</sup></span>
+        </a>
+        <p style="margin-top: 12px;">MeritSync® — the CareerOS™ for career reinvention. Rebuild your pipeline and bounce back from redundancy. A Gethired Global company.</p>
+      </div>
+
+      <div>
+        <div class="footer-links">
+          <a href="#/solution">System</a>
+          <a href="#/services">Services</a>
+          <a href="#/packages">Pricing</a>
+          <a href="#/success-stories">Success Stories</a>
+          <a href="#/ats-tool">ATS Scanner</a>
+          <a href="#/faq">FAQ</a>
+          <a href="#/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>Disclaimer: Career coaching, resume rewriting, and application optimization do not guarantee immediate employment. Outcomes vary based on candidate effort, technical alignment, and macroeconomic conditions.</p>
+      <p style="margin-top: 8px;">© 2026 MeritSync®. All rights reserved. Built for Gethired Global.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

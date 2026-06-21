@@ -229,13 +229,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('messageText').value.trim();
 
       if (!name || !email || !title || !yoe || !service || !message) {
-        alert('Please fill out all required fields.');
+        alert('Kindly complete all the required fields in the form.');
         return;
       }
 
       // Email validation
       if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
+        alert('Please check your email address and enter a valid one.');
         return;
       }
 
@@ -306,11 +306,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const jobDescText = jobInput.value.trim();
 
       if (!resumeText) {
-        alert('Please paste your resume text to begin analysis.');
+        alert('You must paste your resume content to initiate the analysis.');
         return;
       }
       if (!jobDescText) {
-        alert('Please paste a target job description to match against.');
+        alert('Kindly provide a job description to perform the comparison.');
         return;
       }
 
@@ -360,37 +360,37 @@ document.addEventListener('DOMContentLoaded', () => {
       // Check for Email
       const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
       if (emailRegex.test(resumeText)) {
-        formatFindings.push({ type: 'success', text: 'Contact Information: Email address detected.' });
+        formatFindings.push({ type: 'success', text: 'Contact Info: Email address identified.' });
       } else {
         formatScore -= 25;
-        formatFindings.push({ type: 'error', text: 'Missing Email: Applicant tracking systems require a valid email to contact you.' });
+        formatFindings.push({ type: 'error', text: 'Email Missing: An email address is required so recruiters can contact you.' });
       }
 
       // Check for Phone
       const phoneRegex = /(\+?\d{1,4}[\s-])?\(?\d{3}\)?[\s-]\d{3}[\s-]\d{4}|\+?\d{10,13}/;
       if (phoneRegex.test(resumeText)) {
-        formatFindings.push({ type: 'success', text: 'Contact Information: Phone number detected.' });
+        formatFindings.push({ type: 'success', text: 'Contact Info: Phone number identified.' });
       } else {
         formatScore -= 25;
-        formatFindings.push({ type: 'error', text: 'Missing Phone Number: Add a direct phone number to the header.' });
+        formatFindings.push({ type: 'error', text: 'Phone Number Missing: Provide a phone number in your contact section.' });
       }
 
       // Check for LinkedIn link
       const liRegex = /linkedin\.com/i;
       if (liRegex.test(resumeText)) {
-        formatFindings.push({ type: 'success', text: 'Social presence: LinkedIn profile URL detected.' });
+        formatFindings.push({ type: 'success', text: 'Web Presence: LinkedIn link identified.' });
       } else {
         formatScore -= 25;
-        formatFindings.push({ type: 'error', text: 'Missing LinkedIn link: 70%+ of recruiters cross-reference candidates on LinkedIn.' });
+        formatFindings.push({ type: 'error', text: 'LinkedIn Link Missing: Over 70% of recruiters look up candidates on LinkedIn.' });
       }
 
       // Check for length/too short
       const wordCount = resumeText.split(/\s+/).filter(w => w.length > 0).length;
       if (wordCount >= 150) {
-        formatFindings.push({ type: 'success', text: `Length: Resume word count looks healthy (${wordCount} words).` });
+        formatFindings.push({ type: 'success', text: `Length: Resume length is sufficient (${wordCount} words).` });
       } else {
         formatScore -= 25;
-        formatFindings.push({ type: 'error', text: `Too Short: Resume is only ${wordCount} words. ATS systems flag thin resumes.` });
+        formatFindings.push({ type: 'error', text: `Too Short: Your resume has only ${wordCount} words. Parsers flag thin profiles.` });
       }
 
 
@@ -400,34 +400,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Experience Heading Check
       if (/experience|work history|employment/i.test(normResume)) {
-        structFindings.push({ type: 'success', text: 'Section Headings: Work Experience section detected.' });
+        structFindings.push({ type: 'success', text: 'Headings Audit: Work Experience section identified.' });
       } else {
         structScore -= 25;
-        structFindings.push({ type: 'error', text: 'Missing Experience Heading: Use standard titles like "Work Experience" or "Professional Experience".' });
+        structFindings.push({ type: 'error', text: 'Missing Work Experience Section: Use common headings like "Work Experience" or "Professional History".' });
       }
 
       // Skills Heading Check
       if (/skills|technologies|expertise/i.test(normResume)) {
-        structFindings.push({ type: 'success', text: 'Section Headings: Core Skills section detected.' });
+        structFindings.push({ type: 'success', text: 'Headings Audit: Technical or Core Skills section identified.' });
       } else {
         structScore -= 25;
-        structFindings.push({ type: 'error', text: 'Missing Skills Section: Group your core tech or marketing skills in a clear block.' });
+        structFindings.push({ type: 'error', text: 'Skills Section Missing: List your core competencies and tools in a dedicated section.' });
       }
 
       // Bullet points presence check
       if (/[-*•\u2022]/i.test(resumeText)) {
-        structFindings.push({ type: 'success', text: 'Layout formatting: Quantified bullet points detected.' });
+        structFindings.push({ type: 'success', text: 'Format Check: Standard bullet points found.' });
       } else {
         structScore -= 30;
-        structFindings.push({ type: 'error', text: 'No Bullet Points: Avoid paragraph blocks. Use bullet points starting with standard symbols (- or •).' });
+        structFindings.push({ type: 'error', text: 'No Bullets Found: Avoid long paragraphs. Use clear bullet points with standard characters (- or •).' });
       }
 
       // Check wordiness / too long
       if (wordCount > 750) {
         structScore -= 20;
-        structFindings.push({ type: 'error', text: `Too Wordy: Resume contains ${wordCount} words. Keep it under 650 words for a 1-page layout.` });
+        structFindings.push({ type: 'error', text: `Too Long: Resume has ${wordCount} words. Target under 650 words for readability.` });
       } else if (wordCount >= 150) {
-        structFindings.push({ type: 'success', text: 'Layout density: Page density is optimized.' });
+        structFindings.push({ type: 'success', text: 'Format Check: Page margins and content density are well-proportioned.' });
       }
 
 
@@ -447,11 +447,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Grade text
       let grade = '';
       if (overallScore >= 80) {
-        grade = '<span style="color: var(--success); font-weight:700;">ATS COMPATIBLE (Excellent)</span>. Your resume matches core keywords and structure. Ready for submission.';
+        grade = '<span style="color: var(--success); font-weight:700;">EXCELLENT ATS ALIGNMENT (Ready to Apply)</span>. Your document shows solid keyword density and a parser-friendly layout.';
       } else if (overallScore >= 60) {
-        grade = '<span style="color: var(--gold); font-weight:700;">BORDERLINE (Needs Optimization)</span>. Re-insert missing skills and fix structural flags before applying.';
+        grade = '<span style="color: var(--gold); font-weight:700;">BORDERLINE MATCH (Revisions Needed)</span>. We recommend adding the missing keywords and addressing layout recommendations.';
       } else {
-        grade = '<span style="color: var(--error); font-weight:700;">HIGH DANGER (Auto-Reject risk)</span>. Your materials fail key ATS structural rules or lack matched keywords.';
+        grade = '<span style="color: var(--error); font-weight:700;">CRITICAL FLAGS (High Rejection Risk)</span>. Your profile lacks too many target terms or has critical formatting issues.';
       }
       gradeText.innerHTML = grade;
 
